@@ -16,7 +16,7 @@ void makeTree(BST<std::string>& tree, const char* filename) {
         return;
     }
     std::string word;
-    while(!file.eof()) {
+    while (!file.eof()) {
       char ch = file.get();
       if (isalpha(ch)) {
         word += std::tolower(ch);
