@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <string>
+#include <algorithm>
 
 struct Item {
   std::string key;
@@ -39,6 +40,7 @@ class BST {
     reqToVec(arr, current->left);
     reqToVec(arr, current->right);
   }
+
  public:
   BST() : root(nullptr) {}
   ~BST() {
